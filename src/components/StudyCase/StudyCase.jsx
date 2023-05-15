@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import projects from '../../projects/projects';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 
 const StudyCase = () => {
 
@@ -14,12 +14,19 @@ const StudyCase = () => {
 
     console.log(currentProject)
 
+    let navigate = useNavigate();
+
+
+
     return (
-        <div>
+
+        <div className='card'>
+            <button onClick={() => navigate(-1)}>Back</button>
             {currentProject && ( // conditional rendering pour retourner les titres etc
                 <>
                     <h2>{currentProject.titre}</h2>
-                    <p>{currentProject.description}</p>
+                    <p>Nom du client : {currentProject.client}</p>
+                    <p>Descriptif du projet : {currentProject.description}</p>
                 </>
             )}
         </div>

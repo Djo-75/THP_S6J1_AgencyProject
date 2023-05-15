@@ -1,11 +1,28 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import '../../App.css'
 
 const Works = () => {
+
+
+
     return (
+
+
         <div>
-            <h1>Bonjour de la vue works</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam architecto ea quos placeat vel excepturi deserunt saepe blanditiis voluptatem animi, ex, nisi delectus rerum optio repudiandae. Aliquid consectetur sed provident?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, nisi. Itaque quae ab omnis totam commodi cumque atque in a doloribus, modi nobis facilis voluptatibus sequi quidem impedit neque ratione?</p>
+            <p>Fiou, en voilà de bien beaux, des cas d'études !</p>
+            <p>Vas-y l'artiste, clique donc sur l'un des liens ci-dessous : </p>
+            <div className='works'>
+                <NavLink to="/studycase/solane">
+                    <li>Solane</li>
+                </NavLink>
+                <NavLink to="/studycase/platon">
+                    <li>Platon</li>
+                </NavLink>
+                <NavLink to="/studycase/sedal">
+                    <li>Sedal</li>
+                </NavLink>
+            </div>
         </div>
     );
 };
