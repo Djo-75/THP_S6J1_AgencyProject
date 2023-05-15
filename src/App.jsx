@@ -17,7 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/works" element={<Works />} />
-          <Route path="/studycase/:projectsSlug" element={<StudyCase />} />
+          <Route path="/works/:projectsSlug-study-case" element={<StudyCase />} /> //routing dynamique avec le slug
         </Routes>
       </BrowserRouter>
     </>
