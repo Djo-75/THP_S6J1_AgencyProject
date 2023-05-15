@@ -62,6 +62,7 @@
 .dark {
   color: #fff;
   background-image: url(./assets/images/dark-background.jpg);
+  background-size: cover;
 }
 
 .light {
@@ -75,6 +76,7 @@ body,
 #root {
   height: 100%;
   margin: 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .app {
