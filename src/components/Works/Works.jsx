@@ -4,15 +4,12 @@ import '../../App.css'
 
 const Works = () => {
 
-
-
     return (
 
-
-        <div>
+        <div id="category">
             <p>Fiou, en voilà de bien beaux, des cas d'études !</p>
             <p>Vas-y l'artiste, clique donc sur l'un des liens ci-dessous : </p>
-            <div className='works'>
+            <div id="buttons">
                 <NavLink to="/studycase/solane">
                     <li>Solane</li>
                 </NavLink>

@@ -16,8 +16,6 @@ const StudyCase = () => {
 
     let navigate = useNavigate();
 
-
-
     return (
 
         <div className='card'>
